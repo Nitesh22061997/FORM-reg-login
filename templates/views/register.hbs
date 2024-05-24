@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - MyWebsite</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+
+<body>
+    <div class="registration-container">
+        <div class="registration-content">
+            <h2>Register</h2>
+            <form action="/register" method="POST">
+                <label for="registerEmail">Email:</label>
+                <input type="email" id="registerEmail" name="email" autocomplete="new-email">
+
+                <label for="registerfirstname">First Name:</label>
+                <input type="text" id="registerfirstname" name="firstname">
+
+                <label for="registerlastname">Last Name:</label>
+                <input type="text" id="registerlastname" name="lastname">
+
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" class="form-control" id="phoneNumber" name="phone">
+
+                <label for="age">Age</label>
+                <input type="tel" class="form-control" id="age" name="age" placeholder="Enter your age">
+
+                <label for="registerPassword">Password:</label>
+                <input type="password" id="registerPassword" name="password" autocomplete="new-password">
+
+                <label for="registerConfirmPassword">Confirm Password:</label>
+                <input type="password" id="registerConfirmPassword" name="confirmpassword" autocomplete="new-password">
+
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+                        <label class="form-check-label" for="male">Male</label>
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="male" required>
+                        <label class="form-check-label" for="male">Female</label>
+                    </div>
+
+
+                    <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
